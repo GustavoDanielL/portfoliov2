@@ -56,23 +56,23 @@ document.addEventListener('DOMContentLoaded', function () {
           }
         },
         color: {
-          value: "#ffffff"
+          value: "#888888"
         },
         shape: {
           type: "circle"
         },
         opacity: {
-          value: 0.6,
+          value: 0.3,
           random: true,
           animation: {
             enable: true,
             speed: 0.5,
-            minimumValue: 0.4,
+            minimumValue: 0.2,
             sync: false
           }
         },
         size: {
-          value: 4,
+          value: 3,
           random: {
             enable: true,
             minimumValue: 2
@@ -87,13 +87,13 @@ document.addEventListener('DOMContentLoaded', function () {
         links: {
           enable: true,
           distance: 150,
-          color: "#ffffff",
-          opacity: 0.4,
-          width: 1.5,
+          color: "#999999",
+          opacity: 0.2,
+          width: 1,
           shadow: {
-            enable: true,
-            color: "#ffffff",
-            blur: 5
+            enable: false,
+            color: "#999999",
+            blur: 3
           },
           triangles: {
             enable: false
@@ -147,8 +147,8 @@ document.addEventListener('DOMContentLoaded', function () {
           grab: {
             distance: 200,
             links: {
-              opacity: 0.6,
-              color: "#ffffff"
+              opacity: 0.4,
+              color: "#666666"
             }
           },
           bubble: {
@@ -330,5 +330,45 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+
+  // ========== VALIDAÇÃO E FEEDBACK DO FORMULÁRIO ==========
+  const contactForm = document.querySelector('.contact-form-modern');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      // Validação básica já é feita pelo HTML5 (required)
+      // Aqui podemos adicionar feedback visual adicional
+      const submitBtn = this.querySelector('button[type="submit"]');
+      if (submitBtn) {
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+        submitBtn.disabled = true;
+      }
+    });
+  }
+
+  // ========== NAVEGAÇÃO SUAVE EM DISPOSITIVOS MÓVEIS ==========
+  // Fecha o modal ao clicar em links internos no mobile
+  document.querySelectorAll('.modal-cta').forEach(link => {
+    link.addEventListener('click', () => {
+      if (modal && modal.classList.contains('active')) {
+        closeModal();
+      }
+    });
+  });
+
+  // ========== PERFORMANCE: LAZY LOADING DE IMAGENS (se houver) ==========
+  if ('IntersectionObserver' in window) {
+    const lazyImages = document.querySelectorAll('img[data-src]');
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          img.src = img.dataset.src;
+          img.removeAttribute('data-src');
+          observer.unobserve(img);
+        }
+      });
+    });
+    lazyImages.forEach(img => imageObserver.observe(img));
+  }
 });
 
