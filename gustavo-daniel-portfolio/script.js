@@ -56,23 +56,23 @@ document.addEventListener('DOMContentLoaded', function () {
           }
         },
         color: {
-          value: "#888888"
+          value: "#ffffff"
         },
         shape: {
           type: "circle"
         },
         opacity: {
-          value: 0.3,
+          value: 0.6,
           random: true,
           animation: {
             enable: true,
             speed: 0.5,
-            minimumValue: 0.2,
+            minimumValue: 0.4,
             sync: false
           }
         },
         size: {
-          value: 3,
+          value: 4,
           random: {
             enable: true,
             minimumValue: 2
@@ -87,13 +87,13 @@ document.addEventListener('DOMContentLoaded', function () {
         links: {
           enable: true,
           distance: 150,
-          color: "#999999",
-          opacity: 0.2,
-          width: 1,
+          color: "#ffffff",
+          opacity: 0.4,
+          width: 1.5,
           shadow: {
-            enable: false,
-            color: "#999999",
-            blur: 3
+            enable: true,
+            color: "#ffffff",
+            blur: 5
           },
           triangles: {
             enable: false
@@ -147,8 +147,8 @@ document.addEventListener('DOMContentLoaded', function () {
           grab: {
             distance: 200,
             links: {
-              opacity: 0.4,
-              color: "#666666"
+              opacity: 0.6,
+              color: "#ffffff"
             }
           },
           bubble: {

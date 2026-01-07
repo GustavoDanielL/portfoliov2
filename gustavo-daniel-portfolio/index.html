@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Gustavo Daniel - Portfolio profissional de Engenheiro de Software especializado em Machine Learning, Automação e Data Science" />
+  <meta name="author" content="Gustavo Daniel" />
+  <title>Gustavo Daniel - Portfolio | Software Engineer & Data Scientist</title>
+
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Google Fonts - Inter (mais moderna) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- estilos -->
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- tsParticles para fundo animado -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+</head>
+<body>
+  <!-- Fundo Animado de Partículas -->
+  <div id="particles-js"></div>
+
+  <!-- HERO (centralizado com container) -->
+  <section class="hero black-bg texture">
+    <div class="container hero-inner">
+      <div class="hero-left">
+        <h1 class="name">Gustavo Daniel</h1>
+        <h2 class="role">Software Engineer & Data Scientist</h2>
+
+        <p class="short-desc">Machine Learning • Automação • Modelagem Preditiva • Data-Driven Solutions</p>
+
+        <div class="divider" aria-hidden="true"></div>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#contact">Fale comigo</a>
+          <a class="btn ghost" href="Gustavo_D_CV.pdf" download>Baixar CV</a>
+        </div>
+
+        <div class="social">
+          <a href="#" class="social-link"><i class="fab fa-github"></i><span> GitHub</span></a>
+          <a href="#" class="social-link"><i class="fab fa-linkedin"></i><span> LinkedIn</span></a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <p class="bio-long">
+          Engenheiro de Software com experiência em <strong>Machine Learning</strong>, <strong>automação</strong>,
+          geoprocessamento, ETL e análise de dados.
+        </p>
+        <p class="bio-long">
+          Crio sistemas escaláveis, automações inteligentes e modelos preditivos que 
+          <strong>reduzem custos</strong>, <strong>aumentam eficiência</strong> e baseiam decisões em dados reais. 
+          Meu foco é resolver problemas com precisão, visão sistêmica e <strong>impacto mensurável</strong>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOWCASE DE PROJETOS -->
+  <section class="projects-showcase white-bg">
+    <div class="container">
+      <h2 class="section-title">Portfolio & Projetos</h2>
+      
+      <!-- Filtros -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">
+          <i class="fas fa-th"></i> Todos
+        </button>
+        <button class="filter-btn" data-filter="freelance">
+          <i class="fas fa-briefcase"></i> Freelance / B2B
+        </button>
+        <button class="filter-btn" data-filter="autoral">
+          <i class="fas fa-code"></i> Autorais / Open Source
+        </button>
+      </div>
+
+      <!-- Grid de Projetos (Bento Grid) -->
+      <div class="projects-grid bento-grid">
+        
+        <!-- Projeto 1: MRE -->
+        <div class="project-showcase-card reveal glow-border" data-category="freelance" data-project="mre">
+          <div class="project-badge featured">
+            <i class="fas fa-star"></i> Destaque
+          </div>
+          <div class="project-video-container grayscale-video">
+            <div class="video-placeholder gradient-bg-1">
+              <i class="fas fa-chart-bar"></i>
+            </div>
+            <div class="project-overlay">
+              <span class="category-tag">Freelance</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Previsão Orçamentária — MRE</h3>
+            <p class="project-pitch">💰 <strong>Economia de custos:</strong> Sistema reduziu tempo de análise em 40% e permitiu planejamento orçamentário 89% mais preciso</p>
+            <p class="project-desc">Pipeline preditivo que centraliza dados de múltiplos postos internacionais</p>
+            <div class="project-meta">
+              <span class="meta-badge"><i class="fas fa-calendar"></i> 6 meses</span>
+              <span class="meta-badge"><i class="fas fa-layer-group"></i> Full Stack</span>
+            </div>
+            <div class="project-stats">
+              <span><i class="fas fa-check-circle"></i> R² = 0.89</span>
+              <span><i class="fas fa-clock"></i> 40% ↓ tempo</span>
+            </div>
+            <button class="btn-details" data-project="mre">
+              <i class="fas fa-expand"></i> Ver Case Completo
+            </button>
+          </div>
+        </div>
+
+        <!-- Projeto 2: Sistema de Gestão -->
+        <div class="project-showcase-card reveal glow-border" data-category="freelance" data-project="gestao">
+          <div class="project-video-container grayscale-video">
+            <div class="video-placeholder gradient-bg-2">
+              <i class="fas fa-database"></i>
+            </div>
+            <div class="project-overlay">
+              <span class="category-tag">Freelance</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Sistema de Gestão Interna</h3>
+            <p class="project-pitch">📊 <strong>Impacto Real:</strong> Eliminou planilhas manuais e economizou 15% em custos operacionais para empresa com 50+ usuários</p>
+            <p class="project-desc">Centralizou dados de 3 departamentos em plataforma web completa</p>
+            <div class="testimonial">
+              <i class="fas fa-quote-left"></i>
+              <p>"Sistema transformou nossa operação. Dados consolidados em tempo real."</p>
+            </div>
+            <button class="btn-details" data-project="gestao">
+              <i class="fas fa-expand"></i> Ver Case Completo
+            </button>
+          </div>
+        </div>
+
+        <!-- Projeto 3: Previsão Imóveis -->
+        <div class="project-showcase-card reveal glow-border" data-category="autoral" data-project="imoveis">
+          <div class="project-video-container grayscale-video">
+            <div class="video-placeholder gradient-bg-3">
+              <i class="fas fa-home"></i>
+            </div>
+            <div class="project-overlay">
+              <span class="category-tag autoral">Autoral</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Previsão de Preços de Imóveis</h3>
+            <p class="project-pitch">🏠 <strong>87% de precisão:</strong> Modelo explica variação de preços com erro médio absoluto de apenas 8%</p>
+            <p class="project-desc">Ensemble methods + análise geoespacial para precificação inteligente</p>
+            <div class="project-stats">
+              <span><i class="fas fa-check-circle"></i> R² = 0.87</span>
+              <span><i class="fas fa-brain"></i> XGBoost</span>
+            </div>
+            <button class="btn-details" data-project="imoveis">
+              <i class="fas fa-expand"></i> Ver Case Completo
+            </button>
+          </div>
+        </div>
+
+        <!-- Projeto 4: Web Scraping -->
+        <div class="project-showcase-card reveal glow-border" data-category="autoral" data-project="scraping">
+          <div class="project-video-container grayscale-video">
+            <div class="video-placeholder gradient-bg-4">
+              <i class="fas fa-spider"></i>
+            </div>
+            <div class="project-overlay">
+              <span class="category-tag autoral">Autoral</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Sistema de Automação & Scraping</h3>
+            <p class="project-pitch">⚡ <strong>85% de redução de custos:</strong> Sistema coleta 100k+ registros/dia com 99.7% uptime</p>
+            <p class="project-desc">Pipeline robusto 24/7 com IA para parsing inteligente</p>
+            <div class="project-stats">
+              <span><i class="fas fa-robot"></i> Automatizado</span>
+              <span><i class="fas fa-database"></i> 100k+/dia</span>
+            </div>
+            <button class="btn-details" data-project="scraping">
+              <i class="fas fa-expand"></i> Ver Case Completo
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TECNOLOGIAS (preto) - um card por tema -->
+  <section class="tech-section black-bg texture section-transition">
+    <div class="container">
+      <h2 class="section-title white-title">Tecnologias & Ferramentas</h2>
+
+      <!-- Machine Learning (um card com todas as techs) -->
+      <a href="#" class="project-card reveal">
+        <h3>Machine Learning & Data Science</h3>
+        <p>Python • Pandas • NumPy • Scikit-learn • PyTorch • Seaborn • Matplotlib • XGBoost</p>
+      </a>
+
+      <!-- Web -->
+      <a href="#" class="project-card reveal">
+        <h3>Desenvolvimento Web & APIs</h3>
+        <p>Django • Flask • JavaScript • HTML • CSS</p>
+      </a>
+
+      <!-- DB -->
+      <a href="#" class="project-card reveal">
+        <h3>Banco de Dados & Data Engineering</h3>
+        <p>PostgreSQL • MySQL • MongoDB • SQL</p>
+      </a>
+
+      <!-- Automação / Geo -->
+      <a href="#" class="project-card reveal">
+        <h3>Automação, Scraping & Geoprocessamento</h3>
+        <p>Selenium • BeautifulSoup • Scrapy • GeoPandas</p>
+      </a>
+
+      <!-- Ferramentas -->
+      <a href="#" class="project-card reveal">
+        <h3>Ferramentas & Plataformas</h3>
+        <p>Git • Docker • Power BI • Excel Avançado • PowerApps • Power Automate</p>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- SOBRE (branco) -->
+  <section class="about white-bg">
+    <div class="container">
+      <h2 class="section-title">Sobre Mim</h2>
+      <p>
+        Apaixonado por aprender e criar soluções eficientes e escaláveis.
+        Experiência no setor público e privado, atuando com dados sensíveis
+        e desenvolvimento de ferramentas para gerar impacto real.
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS (preto) -->
+  <section class="services black-bg texture">
+    <div class="container">
+      <h2 class="section-title white-title">Serviços & Soluções</h2>
+      <p class="section-subtitle">Transformo ideias em soluções reais com impacto mensurável</p>
+
+      <div class="services-grid">
+        <!-- Serviço 1: Sites & Sistemas -->
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fas fa-globe"></i>
+          </div>
+          <h3>Sites & Sistemas Sob Demanda</h3>
+          <p>Desenvolvimento completo de websites corporativos, landing pages de alta conversão e sistemas web personalizados. Design moderno, responsivo e otimizado para performance.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Landing Pages que convertem</li>
+            <li><i class="fas fa-check"></i> E-commerce & Portfólios</li>
+            <li><i class="fas fa-check"></i> Sistemas de gestão customizados</li>
+            <li><i class="fas fa-check"></i> Integração com APIs</li>
+          </ul>
+          <div class="service-price">
+            <span class="price-label">A partir de</span>
+            <span class="price-value">R$ 2.500</span>
+          </div>
+        </div>
+
+        <!-- Serviço 2: Machine Learning & IA -->
+        <div class="service-card reveal featured-service">
+          <div class="service-badge">Mais Procurado</div>
+          <div class="service-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3>Machine Learning & Automação</h3>
+          <p>Modelos preditivos, análise de dados avançada e automação de processos. Transformo dados em decisões estratégicas com IA aplicada ao seu negócio.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Modelos de previsão (vendas, demanda)</li>
+            <li><i class="fas fa-check"></i> Análise preditiva & forecasting</li>
+            <li><i class="fas fa-check"></i> Automação de processos repetitivos</li>
+            <li><i class="fas fa-check"></i> Web scraping & coleta de dados</li>
+          </ul>
+          <div class="service-price">
+            <span class="price-label">A partir de</span>
+            <span class="price-value">R$ 5.000</span>
+          </div>
+        </div>
+
+        <!-- Serviço 3: Consultoria -->
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Consultoria & Análise de Dados</h3>
+          <p>Diagnóstico técnico, arquitetura de soluções e análise de dados para insights acionáveis. Ajudo empresas a tomarem decisões baseadas em dados reais.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Auditoria de sistemas existentes</li>
+            <li><i class="fas fa-check"></i> Dashboards & relatórios executivos</li>
+            <li><i class="fas fa-check"></i> ETL & Data Engineering</li>
+            <li><i class="fas fa-check"></i> Otimização de performance</li>
+          </ul>
+          <div class="service-price">
+            <span class="price-label">Sob consulta</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO (branco) -->
+  <section id="contact" class="contact white-bg">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-header">
+          <h2 class="section-title">Vamos Trabalhar Juntos?</h2>
+          <p class="contact-intro">
+            Tem um projeto em mente? Precisa de automação, análise de dados ou um sistema personalizado? 
+            <strong>Entre em contato</strong> e vamos transformar sua ideia em realidade.
+          </p>
+        </div>
+
+        <div class="contact-content">
+          <!-- Informações de Contato -->
+          <div class="contact-info">
+            <h3><i class="fas fa-paper-plane"></i> Contato Direto</h3>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:gusdaniel.devmail@gmail.com">gusdaniel.devmail@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fab fa-linkedin"></i>
+              </div>
+              <div>
+                <strong>LinkedIn</strong>
+                <a href="#" target="_blank">linkedin.com/in/gustavo-d</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fab fa-github"></i>
+              </div>
+              <div>
+                <strong>GitHub</strong>
+                <a href="#" target="_blank">github.com/gustavodaniel</a>
+              </div>
+            </div>
+
+            <div class="contact-availability">
+              <i class="fas fa-check-circle"></i>
+              <span>Disponível para projetos freelance e consultorias</span>
+            </div>
+          </div>
+
+          <!-- Formulário -->
+          <div class="contact-form-wrapper">
+            <form class="contact-form-modern" action="mailto:gusdaniel.devmail@gmail.com" method="post" enctype="text/plain">
+              <div class="form-group">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email profissional</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="servico">Tipo de serviço</label>
+                <select id="servico" name="servico" required>
+                  <option value="">Selecione uma opção</option>
+                  <option value="site">Site/Sistema sob demanda</option>
+                  <option value="ml">Machine Learning & Automação</option>
+                  <option value="consultoria">Consultoria & Análise de Dados</option>
+                  <option value="outro">Outro</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="mensagem">Descreva seu projeto</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Conte mais sobre seu projeto, objetivos e prazos..." rows="6" required></textarea>
+              </div>
+
+              <button type="submit" class="btn primary btn-large">
+                <i class="fas fa-paper-plane"></i> Enviar Mensagem
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (preto) -->
+  <footer class="black-bg texture">
+    <div class="container">
+      <p>© 2025 Gustavo Daniel — Software Engineer & Data Scientist</p>
+      <p class="footer-links">
+        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:gusdaniel.devmail@gmail.com"><i class="fas fa-envelope"></i></a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- MODAL DE DETALHES DO PROJETO -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content glass expanded-layout">
+      <button class="modal-close" aria-label="Fechar modal">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="modal-body">
+        <div class="modal-header">
+          <h2 id="modalTitle">Título do Projeto</h2>
+          <span id="modalCategory" class="category-tag">Categoria</span>
+        </div>
+        
+        <!-- Layout Lado a Lado -->
+        <div class="modal-split">
+          <!-- Lado Esquerdo: Mídia -->
+          <div class="modal-left">
+            <div class="modal-video">
+              <div class="video-placeholder-large">
+                <i class="fas fa-play-circle"></i>
+                <p>Demonstração em vídeo (30s)</p>
+                <span class="video-tip">Funcionalidade → Navegação → Resultado</span>
+              </div>
+            </div>
+            
+            <!-- Galeria de Screenshots/Imagens -->
+            <div class="media-gallery">
+              <h4><i class="fas fa-images"></i> Screenshots & Detalhes</h4>
+              <div class="gallery-grid">
+                <div class="gallery-item">
+                  <div class="gallery-placeholder gradient-bg-1">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Dashboard</span>
+                  </div>
+                </div>
+                <div class="gallery-item">
+                  <div class="gallery-placeholder gradient-bg-2">
+                    <i class="fas fa-code"></i>
+                    <span>API</span>
+                  </div>
+                </div>
+                <div class="gallery-item">
+                  <div class="gallery-placeholder gradient-bg-3">
+                    <i class="fas fa-database"></i>
+                    <span>Banco</span>
+                  </div>
+                </div>
+                <div class="gallery-item">
+                  <div class="gallery-placeholder gradient-bg-4">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>Mobile</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Lado Direito: Informações -->
+          <div class="modal-right">
+            <div class="modal-sections">
+              <!-- Métricas de Impacto -->
+              <div class="impact-metrics">
+                <div class="metric-item">
+                  <i class="fas fa-users"></i>
+                  <div>
+                    <strong id="modalUsers">50+</strong>
+                    <span>Usuários</span>
+                  </div>
+                </div>
+                <div class="metric-item">
+                  <i class="fas fa-clock"></i>
+                  <div>
+                    <strong id="modalTime">40%</strong>
+                    <span>Tempo economizado</span>
+                  </div>
+                </div>
+                <div class="metric-item">
+                  <i class="fas fa-dollar-sign"></i>
+                  <div>
+                    <strong id="modalSavings">15%</strong>
+                    <span>Redução de custos</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="modal-section">
+                <h3><i class="fas fa-exclamation-circle"></i> O Problema</h3>
+                <p id="modalProblem">Descrição do problema...</p>
+              </div>
+              <div class="modal-section">
+                <h3><i class="fas fa-lightbulb"></i> A Solução</h3>
+                <p id="modalSolution">Como você resolveu...</p>
+              </div>
+              <div class="modal-section">
+                <h3><i class="fas fa-chart-line"></i> Resultados</h3>
+                <p id="modalResults">Impacto mensurável...</p>
+              </div>
+              <div class="modal-section">
+                <h3><i class="fas fa-code"></i> Tecnologias Utilizadas</h3>
+                <div id="modalTech" class="tech-tags">
+                  <!-- Tags serão inseridas via JS -->
+                </div>
+              </div>
+              
+              <!-- Botões de Ação -->
+              <div class="modal-actions">
+                <a href="#" class="btn primary" id="modalGithub" target="_blank">
+                  <i class="fab fa-github"></i> Ver no GitHub
+                </a>
+                <a href="#contact" class="btn ghost modal-cta">
+                  <i class="fas fa-comments"></i> Projeto Similar?
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
